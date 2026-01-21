@@ -14,7 +14,7 @@ const experiences = [
   {
     id: 1,
     year: "2025- On Going",
-    logo: "/images/projects/Uelement.png", // Replace with U-Element white logo
+    logo: "/images/projects/UElement.png", // Replace with U-Element white logo
     description: "I work as a UI/UX Designer, Product Owner, and Content Writer, bridging user needs with business goals. I design scalable digital products, define product strategy, and craft content that drives clarity and impact."
   },
   {
