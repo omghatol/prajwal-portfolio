@@ -1,8 +1,10 @@
 @import "tailwindcss";
+
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 15, 15, 15;
   --background-end-rgb: 15, 15, 15;
+  --navbar-height: 80px;
 }
 
 body {
@@ -10,17 +12,72 @@ body {
   background: rgb(var(--background-start-rgb));
 }
 
+@theme{
+  --font-poppins-medium: "PoppinsMedium", sans-serif;
+  --font-orbitron-medium: "OrbitronMedium", sans-serif;
+}
+
+@layer base {
+  @font-face {
+    font-family: "PoppinsMedium";
+    src: url("/fonts/Poppins/Poppins-Medium.ttf");
+    font-weight: 500;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "OrbitronMedium";
+    src: url("/fonts/Orbitron/Orbitron-Medium.ttf");
+    font-weight: 500;
+    font-display: swap;
+  }
+
+}
+
+@layer utilities {
+  .fl1 {
+    @apply text-[36px]  font-orbitron-medium   text-[#FFFFFF];
+  }
+
+  .fl2 {
+    @apply text-[16px]  font-poppins-medium   text-[#FFFFFF];
+  }
+  .fl3 {
+    @apply text-[12px]  font-poppins-medium   text-[#FFFFFF];
+  }
+
+
+
+  .glass-card {
+    background: linear-gradient( rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.2) 0%);
+    backdrop-filter: blur(100px);
+    /* Optional: Adds the frosted glass blur effect */
+    -webkit-backdrop-filter: blur(100px);
+    /* Safari support */
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    /* Optional: Adds a subtle border to pop */
+  }
+}
+
 /* Custom Scrollbar for a cleaner look */
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: #0f0f0f;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #333;
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+html {
+  scroll-padding-top: var(
+    --navbar-height
+  );
 }

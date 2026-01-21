@@ -7,17 +7,17 @@ import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen bg-background text-white selection:bg-accent selection:text-white">
+    <main className="flex ">
 
-      {/* Fixed Left Sidebar */}
+      <div className=" ">
       <Sidebar />
+      </div>
 
       {/* Scrollable Right Content */}
-      <div className="flex-1 lg:ml-80 w-full">
+      <div className="flex-1 lg:ml-80 w-full bg-[#1E1E1E]">
         <div className="px-6 lg:px-16 py-8 max-w-6xl mx-auto">
 
-          <Navbar />
-
+    
           <Hero />
 
           <Projects />
