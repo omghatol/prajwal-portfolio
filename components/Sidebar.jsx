@@ -54,10 +54,10 @@ export default function Sidebar() {
 
     return (
         // Main Sidebar Container
-        <aside className="w-full lg:w-[400px] lg:fixed lg:h-screen bg-[#1E1E1E] p-4 z-50 flex flex-col justify-center overflow-y-auto">
+        <aside className="w-full max-w-[420px] mx-auto lg:mx-0 lg:w-[400px] lg:fixed lg:h-screen bg-[#1E1E1E] p-4 z-40 flex flex-col justify-center overflow-y-auto">
 
             {/* The Inner Card */}
-            <div className="w-[350px] h-full max-h-[900px] bg-[#1a1a1a] rounded-[15px] border border-[#2a2a2a] py-4 px-8 flex flex-col justify-between glass-card">
+            <div className="w-full max-w-[360px] lg:max-w-[350px] h-auto lg:h-full lg:max-h-[900px] bg-[#1a1a1a] rounded-[15px] border border-[#2a2a2a] py-4 px-6 lg:px-8 flex flex-col justify-between glass-card mx-auto">
 
                 {/* Top Section: Logo & Image */}
                 <div className="flex flex-col ">

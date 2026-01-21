@@ -5,14 +5,13 @@ import Image from "next/image";
 import { FaTimes, FaExternalLinkAlt } from "react-icons/fa";
 
 // 1. DATA: Define your projects here
-// Separated into 'recent' and 'more' to match the layout
 const recentProjects = [
   {
     id: "tsecond",
     name: "T-Second",
-    logo: "/images/projects/tsecond.png", // Replace with actual path
-    pdf: "/pdf/tsecond.pdf",               // Replace with actual PDF path
-    color: "text-blue-500"                 // Optional: for logo text color simulation
+    logo: "/images/projects/tsecond.png", 
+    pdf: "/pdf/tsecond.pdf",               
+    color: "text-blue-500"                 
   },
   {
     id: "dhanyaayai",
@@ -31,7 +30,7 @@ const moreProjects = [
   { id: "prajvault", name: "Praj Vault", logo: "/images/logo-main.png", pdf: "/pdf/prajvault.pdf" },
 ];
 
-// 2. COMPONENT: Custom Arrow Icon (Matches your screenshot)
+// 2. COMPONENT: Custom Arrow Icon
 const ArrowIcon = () => (
   <svg
     width="40"
@@ -67,8 +66,6 @@ export default function Projects() {
             {/* Small Icon before title */}
             <div className="w-5 h-5 relative opacity-70">
                  <Image src="/icons/projects-icon.svg" alt="icon" fill className="object-contain" />
-                 
-                 
             </div>
             <h2 className="fl3">Projects</h2>
         </div>
@@ -102,7 +99,8 @@ export default function Projects() {
 
       {/* --- PDF POPUP MODAL --- */}
       {selectedProject && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-sm p-4 animate-in fade-in duration-200">
+        // UPDATED: Changed z-[100] to z-[9999] to ensure it covers the Navbar
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/90 backdrop-blur-sm p-4 animate-in fade-in duration-200">
           <div className="relative w-full max-w-6xl h-[90vh] bg-[#1a1a1a] rounded-2xl border border-[#333] flex flex-col shadow-2xl overflow-hidden">
             
             {/* Header */}
@@ -137,7 +135,7 @@ function ProjectCard({ project, onClick }) {
       onClick={onClick}
       className="group relative w-full h-[280px] bg-[#141414] border border-[#2a2a2a] rounded-[20px] cursor-pointer overflow-hidden transition-all duration-300 "
     >
-        {/* Background Hover Gradient (Optional subtle effect) */}
+        {/* Background Hover Gradient */}
         <div className="absolute inset-0 " />
 
         {/* 1. The Logo (Centered) */}
