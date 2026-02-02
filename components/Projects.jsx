@@ -28,7 +28,7 @@ const moreProjects = [
   { id: "uelement", name: "U-Element", logo: "/images/projects/UElement.png", pdf: "https://uelement.in/" },
   { id: "icici", name: "ICICI Bank", logo: "/images/projects/icici.png", pdf: "/pdf/Icici-Bank.pdf" },
   { id: "teslabird", name: "Tesla Bird", logo: "/images/projects/tesla.png", pdf: "/pdf/Tesla-bird.pdf" },
-  { id: "parkme", name: "Park Me", logo: "/images/projects/parkme.png", pdf: "/pdf/parkme.pdf" },
+  { id: "parkme", name: "Park Me", logo: "/images/projects/parkme.png", pdf: "/pdf/Parkme.pdf" },
   { id: "prajvault", name: "Praj Vault", logo: "/images/logo-main.png", pdf: "https://prajwal-portfolio-eta.vercel.app/" },
 ];
 
