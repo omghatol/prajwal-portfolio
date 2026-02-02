@@ -8,25 +8,19 @@ const socialLinks = [
     {
         id: 1,
         icon: "/icons/instagram.svg",
-        href: "https://www.instagram.com/yourusername",
+        href: "https://www.instagram.com/rudra_gohad07?igsh=MWFhNm1mdGllNGRsOA==",
         alt: "Instagram"
     },
     {
         id: 2,
-        icon: "/icons/facebook.svg",
-        href: "https://www.facebook.com/yourusername",
-        alt: "Facebook"
-    },
-    {
-        id: 3,
         icon: "/icons/email.svg",
-        href: "mailto:your@email.com",
+        href: "mailto:rudragohad51@gmail.com",
         alt: "Email"
     },
     {
-        id: 4,
+        id: 3,
         icon: "/icons/linkedin.svg",
-        href: "https://www.linkedin.com/in/yourusername",
+        href: "https://www.linkedin.com/in/prajwal-gohad-hfi-cua%E2%84%A2-b51401248/",
         alt: "LinkedIn"
     }
 ];
