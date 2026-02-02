@@ -158,8 +158,8 @@ export default function Navbar() {
               <h2 className="text-xl text-white font-semibold pl-2">Resume Preview</h2>
               <div className="flex gap-3">
                 <a
-                  href="/resume.pdf"
-                  download="Prajwal_Resume.pdf"
+                  href="/pdf/Prajwal-Resume.pdf"
+                  download="Prajwal-Resume.pdf"
                   className="flex items-center gap-2 bg-white text-black px-5 py-2.5 rounded-full text-sm font-bold hover:bg-gray-200 transition-colors"
                 >
                   <FaDownload /> Download Resume
@@ -174,7 +174,7 @@ export default function Navbar() {
             </div>
             <div className="flex-1 w-full h-full bg-[#111]">
               <iframe
-                src="/pdf/Parkme.pdf"
+                src="/pdf/Prajwal-Resume.pdf"
                 className="w-full h-full border-none"
                 title="Resume PDF"
               />
