@@ -35,8 +35,8 @@ export default function Hero() {
 
           {/* 2. Download CV Button -> Downloads the PDF */}
           <a 
-            href="/resume.pdf"             // Path to file in 'public' folder
-            download="Prajwal_Resume.pdf"  // The name the file will have when downloaded
+            href="/pdf/Prajwal-Resume.pdf"             // Path to file in 'public' folder
+            download="Prajwal-Resume.pdf"  // The name the file will have when downloaded
             className="flex items-center fl2 gap-3 px-4 py-2 border border-white rounded-[15px] hover:bg-white hover:text-black transition-all duration-300 group cursor-pointer"
           >
             Download CV
