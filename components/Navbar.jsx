@@ -108,7 +108,7 @@ export default function Navbar() {
       </div>
 
       {/* MAIN NAVBAR CONTAINER - FIXED POSITION (Desktop) */}
-      <div className="fixed top-0 right-0 w-full lg:w-[calc(100%-400px)] z-50 hidden lg:flex justify-between items-center px-12 py-4 pointer-events-none">
+      <div className="fixed top-0 right-0 w-full lg:w-[calc(100%-450px)] z-50 hidden lg:flex justify-between items-center px-12 py-4 pointer-events-none">
 
         {/* 1. Gray Navigation Pill */}
         <nav className="glass-card p-1.5 rounded-[15px] border border-[#fff]/20 flex items-center pointer-events-auto bg-[#1c1c1c]/80 ">
